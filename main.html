@@ -8,19 +8,23 @@
 
 <body>	
 	<script>
-		function secondHighest(arr) {
+		function secondHighest(arr) 
+		{
 			//Write your code here
-			Arrays.sort(arr);
-			max=arr[arr.length-1];
+			
 			if(arr.length<2)
 				return "-Infinity";
-	for (let i = arr.length-2; i >=0; i--) {
+				
+			else{
+				Arrays.sort(arr);
+			max=arr[arr.length-1];
+	for (let i = arr.length-2; i >=0; i--)
+		{
 				if(max!=arr[i])
 					retrun arr[i];
-				
-		}
+				}
 			return "-Infinity";
-			
+			    }
 			
 		}
 		
